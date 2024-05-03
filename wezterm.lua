@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 config.color_scheme = "Tokyo Night"
-config.default_prog = { "gitbash" }
+config.default_prog = { "bash" }
 config.keys = {
 	{ key = "w", mods = "CTRL|SHIFT", action = wezterm.action.CloseCurrentTab({ confirm = false }) },
 	{ key = "h", mods = "ALT", action = wezterm.action.ActivateTabRelative(-1) },
