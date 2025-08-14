@@ -2,8 +2,10 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 config.color_scheme = "Tokyo Night"
+config.font_size = 14.0
 config.use_dead_keys = false
 config.keys = {
+    { key = "7", mods = "OPT", action = wezterm.action.SendString("|") },
 	{ key = "¨", mods = "OPT", action = wezterm.action.SendString('~') }, -- Needed for swedish_no_deadkeys
 	{ key = "2", mods = "OPT", action = wezterm.action.SendString('@') }, -- Needed for some reason
 	{ key = "LeftArrow", mods = "OPT", action = wezterm.action.SendKey({ key='b', mods='ALT'}) }, -- For jumping one word in the terminal input
